@@ -23,8 +23,11 @@ if (flutterVersionName == null) {
 }
 
 android {
+    namespace = "com.example.flutter_shaders"
     compileSdkVersion flutter.compileSdkVersion
-    ndkVersion flutter.ndkVersion
+    // ndkVersion flutter.ndkVersion
+    // the current version is not enough for the latest camerax
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
